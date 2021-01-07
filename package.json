@@ -4,14 +4,11 @@
   "version": "1.0.0",
   "dependencies": {
     "@11ty/eleventy": "^0.11.1",
-    "svelte-app": "github:kyosuke/multi-repo-website-private-spa"
+    "multi-repo-website-bundle": "file:bundled-packages/multi-repo-website-bundle-1.0.0.tgz"
   },
   "scripts": {
     "start": "npm run build -- --serve",
     "build": "eleventy --input=./src",
-    "setup": "cp -R ./node_modules/svelte-app/public/build ./_site/spa/"
-  },
-  "bundleDependencies": [
-    "svelte-app"
-  ]
+    "setup": "cp -R ./node_modules/multi-repo-website-bundle/node_modules/svelte-app/public/build ./_site/spa/"
+  }
 }

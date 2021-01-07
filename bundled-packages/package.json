@@ -1,0 +1,11 @@
+{
+  "private": true,
+  "name": "multi-repo-website-bundle",
+  "version": "1.0.0",
+  "dependencies": {
+    "svelte-app": "github:kyosuke/multi-repo-website-private-spa"
+  },
+  "bundleDependencies": [
+    "svelte-app"
+  ]
+}
